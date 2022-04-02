@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad39a609-428e-4558-90da-45b86e506f41" name="Changes" comment="&quot;start tracking - first model xgboost&quot;">
-      <change afterPath="$PROJECT_DIR$/data/submissions/submission002.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/happy_fool_day.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/002.model" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visualization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
-    </list>
+    <list default="true" id="ad39a609-428e-4558-90da-45b86e506f41" name="Changes" comment="add visualization script to the project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +196,28 @@
       <option name="project" value="LOCAL" />
       <updated>1648845920368</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="insert figure">
+      <created>1648889269432</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648889269432</updated>
+    </task>
+    <task id="LOCAL-00003" summary="drop duplicates">
+      <created>1648889345259</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648889345259</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add visualization script to the project">
+      <created>1648889441746</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648889441746</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,7 +234,10 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="&quot;start tracking - first model xgboost&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;start tracking - first model xgboost&quot;" />
+    <MESSAGE value="insert figure" />
+    <MESSAGE value="drop duplicates" />
+    <MESSAGE value="add visualization script to the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="add visualization script to the project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

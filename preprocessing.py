@@ -13,6 +13,9 @@ def prepare_data():
     df = pd.read_csv(DATA_DIR / "train.csv", index_col="id", header=0)
     df = df[["lines_per_sec", "distance", "pet_name"]]
 
+    # drop duplicates
+    df.drop_duplicates(inplace=True)
+
     # shuffle the dataset
     df = df.sample(frac=1., random_state=33)
 
@@ -20,7 +23,7 @@ def prepare_data():
     df = pd.get_dummies(df, drop_first=True)
 
     # change data types
-    df = df.astype(np.float32)
+    df = df.astype(np.float64)
 
     # split train/test
     h = int(df.shape[0] * 0.7)

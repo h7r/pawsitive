@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-DATA_DIR = Path.cwd().parent / "data"
+DATA_DIR = Path.cwd().parent / "_pawsitive" / "data"
 
 
 def prepare_data():

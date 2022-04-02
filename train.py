@@ -26,9 +26,10 @@ def training(X_train, X_test, y_train, y_test):
         "eta": 0.3,
         "tree_method": "hist",
         "objective": "reg:squarederror",
-        "eval_metric": "rmse",
+        "eval_metric": "logloss",
         "nthread": 4,
         "seed": 1302
+        #"min_child_weight": 10000
     }
     # start training monitoring scores
     watchlist = [(d_test, "eval"), (d_train, "train")]
@@ -42,7 +43,7 @@ def training(X_train, X_test, y_train, y_test):
     bst_with_predictions = xgb.train(hyperparameters, d_train, 10, watchlist)
 
     # save the model
-    bst_with_predictions.save_model(MODELS_DIR / '0001.model')
+    bst_with_predictions.save_model(MODELS_DIR / '001.model')
 
     return bst_with_predictions
 

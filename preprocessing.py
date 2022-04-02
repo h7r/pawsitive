@@ -12,6 +12,9 @@ def prepare_data():
     # load the data
     df = pd.read_csv(DATA_DIR / "train.csv", index_col="id", header=0)
     df = df[["lines_per_sec", "distance", "pet_name"]]
+    
+    # drop duplicates
+    df.drop_duplicates(inplace=True)
 
     # shuffle the dataset
     df = df.sample(frac=1., random_state=33)

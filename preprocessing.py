@@ -5,13 +5,16 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-DATA_DIR = Path.cwd().parent / "_pawsitive" / "data"
+DATA_DIR = Path.cwd().parent / / "data"
 
 
 def prepare_data():
     # load the data
     df = pd.read_csv(DATA_DIR / "train.csv", index_col="id", header=0)
     df = df[["lines_per_sec", "distance", "pet_name"]]
+
+    # remove duplicated rows
+    df.drop_duplicates(inplace=True)
 
     # shuffle the dataset
     df = df.sample(frac=1., random_state=33)

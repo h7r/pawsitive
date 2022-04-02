@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-DATA_DIR = Path.cwd().parent / "_pawsitive" / "data"
+DATA_DIR = Path.cwd().parent / "data"
 
 def create_figure():
     df = pd.read_csv(DATA_DIR / "train.csv", index_col="id", header=0)

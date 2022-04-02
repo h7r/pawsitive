@@ -9,9 +9,9 @@ import xgboost as xgb
 
 warnings.filterwarnings("ignore")
 
-MODELS_DIR = Path.cwd().parent / "_pawsitive" / "models"
-DATA_DIR = Path.cwd().parent / "_pawsitive" / "data"
-SUBMISSION_DIR = Path.cwd().parent / "_pawsitive" /  "data" / "submissions"
+MODELS_DIR = Path.cwd().parent / "models"
+DATA_DIR = Path.cwd().parent / "data"
+SUBMISSION_DIR = Path.cwd().parent / "data" / "submissions"
 
 
 def training(X_train, X_test, y_train, y_test):

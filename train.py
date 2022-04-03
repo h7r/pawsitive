@@ -53,7 +53,7 @@ def get_preds(model):
     # load and prepare testing set
     df = pd.read_csv(DATA_DIR / "test.csv", index_col="id", header=0)
     df = pd.get_dummies(df, drop_first=True)
-    df = df.astype(np.float32)
+    df = df.astype(np.float64)
     d_test = xgb.DMatrix(df)
     predictions = model.predict(d_test, iteration_range=(0, model.best_iteration))
 

@@ -23,7 +23,7 @@ SUBMISSION_DIR = Path.cwd().parent / "_pawsitive" / "data" / "submissions"
 
 
 def training(X_train, X_test, y_train, y_test):
-    # store the data ib DMatrix
+    # store the data in DDMatrix
     d_train = xgb.DMatrix(X_train, label=y_train)
     d_test = xgb.DMatrix(X_test, label=y_test)
 
@@ -36,17 +36,17 @@ def training(X_train, X_test, y_train, y_test):
     watchlist = [(d_test, "eval"), (d_train, "train")]
     bst = xgb.train(params, d_train, 15, watchlist)
 
-    # use predictions to improve the model
+    # boost from predictions
     ptrain = bst.predict(d_train, output_margin=True)
     ptest = bst.predict(d_test, output_margin=True)
     d_train.set_base_margin(ptrain)
     d_test.set_base_margin(ptest)
-    bst_with_predictions = xgb.train(params, d_train, 15, watchlist)
+    best_booster = xgb.train(params, d_train, 15, watchlist)
 
     # save the model
-    bst_with_predictions.save_model(MODELS_DIR / '003.model')
+    best_booster.save_model(MODELS_DIR / '003.model')
 
-    return bst_with_predictions
+    return best_booster
 
 
 def get_preds(model):

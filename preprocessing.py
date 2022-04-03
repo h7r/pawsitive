@@ -14,10 +14,7 @@ def prepare_data():
     df = df[["lines_per_sec", "distance", "pet_name"]]
     
     # drop duplicates
-    df.drop_duplicates(inplace=True)
-
-    # drop duplicates
-    df.drop_duplicates(inplace=True)
+    df.drop_duplicates(inplace=True)    
 
     # shuffle the dataset
     df = df.sample(frac=1., random_state=33)

@@ -112,8 +112,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.train" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.train" />
       <item itemvalue="Python.visualization" />
     </list>
     <recent_temporary>

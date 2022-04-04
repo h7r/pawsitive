@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 #
 from preprocessing import prepare_data
-from visualization import create_figure
 from train import *
+from visualization import create_figure
 
 if __name__ == "__main__":
     create_figure()
